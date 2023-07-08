@@ -14,6 +14,8 @@
   --color-black: #000;
 }
 
+/* Utilitários */
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -68,6 +70,7 @@ header img {
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 1rem auto 0;
 }
 
 nav a {
@@ -96,6 +99,8 @@ header nav a:nth-child(2n-1) {
 }
 
 /* Conteúdo principal */
+
+/* Hero */
 
 .hero-section {
   padding-right: 0;
@@ -148,4 +153,142 @@ h2 {
   right: -4rem;
   height: 48px;
   width: 132px;
+}
+
+/* Cards */
+
+.courses-section {
+  padding-bottom: 8rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: -8rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-black);
+  box-shadow: 4px 4px 0 var(--color-black);
+  max-width: 17rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) {
+  align-self: end;
+  background-color: var(--color-secondary);
+}
+
+.card strong {
+  display: block;
+  font: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card a {
+  display: block;
+  margin: 3rem 0 0 auto;
+  width: fit-content;
+}
+
+/* Rodapé */
+
+footer {
+  border-bottom: 0;
+  padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a {
+  display: block;
+  padding-left: 0;
+}
+
+.newsletter-form label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.newsletter-form input {
+  border: 2px solid var(--color-black);
+  box-shadow: 4px 4px 0 var(--color-black);
+  font-size: 1.5rem;
+  padding: .5rem;
+  width: 100%;
+}
+
+/* Media queries - Desktop */
+
+@media screen and (min-width: 40rem) {
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card:nth-child(2n) {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header img,
+  header nav,
+  header .button {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  h1, h2 {
+    font-size: 4rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 72rem;
+  }
+
+  .container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-column {
+    flex: 2;
+  }
+
+  .about-column p {
+    font-size: 1.25rem;
+    max-width: 16rem;
+  }
+
+  footer nav {
+    flex: 1;
+  }
+
+  .newsletter-form {
+    flex: 3;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .container {
+    max-width: 80rem;
+  }
 }

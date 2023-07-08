@@ -33,7 +33,7 @@ Totalmente prático:
 
 <a href="https://github.com/monicaquintal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40px"/></a>&nbsp;&nbsp;
 <a href="https://github.com/monicaquintal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40px"/></a>
-<a href="https://github.com/monicaquintal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40px"></a>
+<a href="https://github.com/monicaquintal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="36px"></a>
 
 </div>
 
